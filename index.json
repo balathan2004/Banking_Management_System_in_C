@@ -4,15 +4,7 @@
 			"account_number":	"20c453d1",
 			"name":	"light",
 			"balance":	1000
-		}, {
-			"account_number":	"7a6b21c7",
-			"name":	"kausika",
-			"balance":	12000
 		}],
-	"transaction":	[{
-			"account_number":	"7a6b21c7",
-			"transaction_type":	"deposit",
-			"amount":	2000
-		}],
+	"transaction":	[],
 	"transaction_count":	1
 }
