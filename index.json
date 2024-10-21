@@ -1,10 +1,14 @@
 {
-	"accounts_count":	2,
+	"accounts_count":	1,
 	"accounts":	[{
 			"account_number":	"20c453d1",
 			"name":	"light",
-			"balance":	1000
+			"balance":	10000
 		}],
-	"transaction":	[],
+	"transaction":	[{
+			"account_number":	"20c453d1",
+			"transaction_type":	"deposit",
+			"amount":	9000
+		}],
 	"transaction_count":	1
 }

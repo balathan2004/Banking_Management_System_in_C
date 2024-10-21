@@ -88,7 +88,7 @@ void make_transaction(Account *account) {
       }
     } while (choice != 3);
   } else {
-    printf("Error Finding Account!!!");
+    printf("\nError Finding Account!!!\n");
   }
 }
 
@@ -130,7 +130,8 @@ Account *find_account() {
   Account *found_account = NULL;
 
   printf("\n Enter Account Number: ");
-  scanf("8%s", inputAccount);
+  scanf("%s", inputAccount);
+  inputAccount[8] = '\0';
 
   printf("\n searching for Account %s", inputAccount);
 
@@ -138,8 +139,6 @@ Account *find_account() {
     if (strcmp(inputAccount, accounts[i].account_number) == 0) {
       found_account = &accounts[i];
       break;
-    } else {
-      printf("%s ---  %s", inputAccount, accounts[i].account_number);
     }
   }
 
@@ -291,8 +290,7 @@ void init() {
 
 int main() {
 
-  int i, choice, count;
-  char short_uuid[9];
+  int choice;
   Account *current_account;
   init();
 
